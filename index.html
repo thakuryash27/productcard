@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Product List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 40px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background: #ffffff;
+            width: 230px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .price {
+            font-size: 16px;
+            color: #e63946;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 20px;
+            background: #1d3557;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #457b9d;
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .product-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="product-container">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+        <img src="https://i.rtings.com/assets/pages/9oHHVecp/best-budget-wireless-headphones-20240426-medium.jpg?format=auto" class="product-img">
+        <div class="product-details">
+            <div class="product-name">Wireless Headphones</div>
+            <div class="price">₹1,999</div>
+            <div class="description">Noise cancellation with long battery life.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+        <img src="https://images-cdn.ubuy.co.in/633fedd50c6ce04230740566-smart-watch-for-android-phones-and-ios.jpg" class="product-img">
+        <div class="product-details">
+            <div class="product-name">Smart Watch</div>
+            <div class="price">₹2,499</div>
+            <div class="description">Track fitness and heart rate easily.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+        <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/speaker/party-speaker/9/d/f/apollo-one-20w-bluetooth-portable-speaker-with-wireless-karaoke-original-imahgqsar5tbwebj.jpeg?q=90" class="product-img">
+        <div class="product-details">
+            <div class="product-name">Bluetooth Speaker</div>
+            <div class="price">₹1,299</div>
+            <div class="description">Portable speaker with deep bass sound.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+        <img src="https://dlcdnwebimgs.asus.com/gain/1F5AFFA6-D3DC-42CA-B37D-03DAAE123012/w750/h470/fwebp" class="product-img">
+        <div class="product-details">
+            <div class="product-name">Gaming Mouse</div>
+            <div class="price">₹799</div>
+            <div class="description">High precision mouse with RGB lighting.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+        <img src="https://skybags.co.in/cdn/shop/files/Vesper_Resized_1800x1800.webp?v=1723540666" class="product-img">
+        <div class="product-details">
+            <div class="product-name">Laptop Backpack</div>
+            <div class="price">₹999</div>
+            <div class="description">Waterproof backpack with laptop compartment.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsoL0HNjkgkZO-DLwMptuB2BNNioS8VgD2gA&s" class="product-img">
+        <div class="product-details">
+            <div class="product-name">Power Bank</div>
+            <div class="price">₹1,199</div>
+            <div class="description">10000mAh fast charging power bank.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83iCI4yUqWtRVFnJoql_2X2X543S6NE7L4w&s" class="product-img">
+        <div class="product-details">
+            <div class="product-name">USB Keyboard</div>
+            <div class="price">₹699</div>
+            <div class="description">Comfortable typing with silent keys.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product-card">
+        <img src="https://images-cdn.ubuy.co.in/69387ae03b3ceb8a1b0afe75-led-desk-lamp-for-office-home.jpg" class="product-img">
+        <div class="product-details">
+            <div class="product-name">LED Desk Lamp</div>
+            <div class="price">₹899</div>
+            <div class="description">Adjustable brightness with touch control.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="product-card">
+        <img src="https://www.techadvisor.com/wp-content/uploads/2025/12/Tech-Advisor-Best-Fitness-Tracker-4-1.png?w=1024" class="product-img">
+        <div class="product-details">
+            <div class="product-name">Fitness Band</div>
+            <div class="price">₹1,499</div>
+            <div class="description">Track steps, sleep and calories burned.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="product-card">
+        <img src="https://cdn11.bigcommerce.com/s-xdygvn/images/stencil/1193x795/uploaded_images/external-vs-internal-hard-drive-a-comparison.jpg?t=1672775870" class="product-img">
+        <div class="product-details">
+            <div class="product-name">Portable Hard Drive</div>
+            <div class="price">₹3,499</div>
+            <div class="description">1TB external hard drive with USB 3.0.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <div class="product-card">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTFkcT8epW6xqCRZepLZk8yI_ahA6AsYjHBfF7_Lwj2qg_5QRTT3aol3wus5cCxIiCJspUeIlktz2HLQ6ekCVss-eBvt-48">
+        <div class="product-details">
+            <div class="product-name">Boat Airdops</div>
+            <div class="price">₹1,499</div>
+            <div class="description">boat airdops 300.</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
